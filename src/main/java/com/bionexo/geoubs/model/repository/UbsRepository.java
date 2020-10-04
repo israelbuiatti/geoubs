@@ -14,7 +14,7 @@ public interface UbsRepository extends JpaRepository<Ubs, Long> {
 						+ "	(acos(sin(radians(u.vlr_latitude)) * sin(radians(?1)) +"
 						+ "	cos(radians(u.vlr_latitude)) * cos(radians(?1)) *"
 						+ "	cos(radians(u.vlr_longitude ) - radians(?2))) * 6378) as distancia"
-						+ "	,u.* from geoubs.ubs u"
+						+ "	,u.* from zij7j69kbjhdj2tf.ubs u"
 					+ " ) c1"
 					+ " order by distancia limit ?4 offset ?3 ",nativeQuery = true)
 	List<Ubs> getNearUbs(String latitude, String longitude, Integer page, Integer per_page);
