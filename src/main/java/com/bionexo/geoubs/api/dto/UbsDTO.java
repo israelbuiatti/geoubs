@@ -30,7 +30,7 @@ public class UbsDTO {
 					.name(ubs.getName())
 					.address(ubs.getAddress())
 					.city(ubs.getCity())
-					.phone(ubs.getDistancia())
+					.phone(ubs.getPhone())
 					.distance(ubs.getDistancia())
 					.geocode(new GeocodeDTO(ubs.getLatitude(), ubs.getLongitude()))
 					.scores(new ScoresDTO(ubs.getAdaptation_for_seniors(), ubs.getMedical_equipment(), ubs.getMedicine()))
