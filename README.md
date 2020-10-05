@@ -48,6 +48,8 @@ mvn clean package dockerfile:build
 
 docker-compose up
 ```
+Acessando
+- http://localhost:8090/api/v1/find_ubs?query=-3.745584,%20-38.489624&page=1&per_page=1
 
 &nbsp;
 
@@ -61,6 +63,8 @@ cd frontend
 
 npm i && npm start
 ```
+Acessando
+- http://localhost:3000
 
 
 &nbsp;
