@@ -81,8 +81,9 @@ Projeto back-end feito deploy no heroku
 
 &nbsp;
 
-## Deploy na Digital Ocean com Docker
+## Deploy na Digital Ocean 
 
+Projeto back-end feito deploy na Digital Ocean
 
 - http://165.227.127.44:8090/api/v1/find_ubs?query=-3.745584,%20-38.489624&page=2
 
