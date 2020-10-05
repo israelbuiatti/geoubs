@@ -3,14 +3,14 @@ services:
  docker-app:
     image: bionexo/geoubs-app
     ports:
-      - "8080:8080"
+      - "8090:8080"
     depends_on:
       - docker-mysql
 
  docker-mysql:
     image: mysql:5.7
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - ./docker/mysqldata:/var/lib/mysql
     environment:
