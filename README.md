@@ -26,68 +26,14 @@ A base de dados foi extraída do site https://dados.gov.br/dataset/unidades-basi
 &nbsp;
 
 
-## Endpoint
-
-- query: Coordenada geográfica usada como parâmetro de busca para as UBSs mais próximas
-- per_page: define a quantidade de registros por página
-- page: define a página atual de retorno
-
-```
-https://buiatti-geoubs-backend.herokuapp.com/api/v1/find_ubs?query=-3.745584,20-38.489624&page=2&per_page=1
-```
-
-&nbsp;
-
-## Executando o back-end com docker
+## Executando o projeto
 
 
 ```
-cd backend
+mvn clean package
 
-mvn clean package dockerfile:build 
-
-docker-compose up
-```
-Acessando:
-- http://localhost:8090/api/v1/find_ubs?query=-3.745584,%20-38.489624&page=1&per_page=1
-
-&nbsp;
-
-
-
-## Executando o front-end
-
+java -jar target/dbc-spring-bach-0.0.1-SNAPSHOT.jar file=file/dados.csv
 
 ```
-cd frontend
 
-npm i && npm start
-```
-Acessando:
-- http://localhost:3000
-
-
-&nbsp;
-
-## Deploy no Heroku
-
-Projeto front-end feito deploy no heroku
-
-- https://buiatti-geoubs-frontend.herokuapp.com
-
-
-Projeto back-end feito deploy no heroku
-
-
-- https://buiatti-geoubs-backend.herokuapp.com/api/v1/find_ubs?query=-3.745584,%20-38.489624&page=2
-
-
-
-&nbsp;
-
-## Deploy na Digital Ocean 
-
-Projeto back-end feito deploy na Digital Ocean
-
-- http://165.227.127.44:8090/api/v1/find_ubs?query=-3.745584,%20-38.489624&page=2
 
